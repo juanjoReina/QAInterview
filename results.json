@@ -1,0 +1,185 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Automated scenarios for second exercise",
+    "line": 1,
+    "id": "automated-scenarios-for-second-exercise",
+    "tags": [],
+    "uri": "Features\\automatedScenarios.feature",
+    "elements": [
+      {
+        "id": "automated-scenarios-for-second-exercise;1-check-that-the-kaboo-signup-is-working-properly",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "1-Check that the Kaboo signup is working properly",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is on /signup page",
+            "match": {
+              "location": "Git\\QAInterview\\Features\\stepsDefinitions\\stepsDefinitionsSignup.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1779000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "fills all fields with valid data on step 1",
+            "match": {
+              "location": "Git\\QAInterview\\Features\\stepsDefinitions\\stepsDefinitionsSignup.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8636000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "clicks NEXT",
+            "match": {
+              "location": "Git\\QAInterview\\Features\\stepsDefinitions\\stepsDefinitionsSignup.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 419000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "fills all fields with valid data from step 2",
+            "match": {
+              "location": "Git\\QAInterview\\Features\\stepsDefinitions\\stepsDefinitionsSignup.js:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10166000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "register button is enable and clickable",
+            "match": {
+              "location": "Git\\QAInterview\\Features\\stepsDefinitions\\stepsDefinitionsSignup.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 147000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\..\\..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "automated-scenarios-for-second-exercise;2-check-that-the-kaboo-login-is-working-properly-(user-registered-or-use-autouk-/-autotest1-)",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "2-Check that the Kaboo login is working properly (user registered or use autouk / Autotest1 )",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "user is on /login page",
+            "match": {
+              "location": "Git\\QAInterview\\Features\\stepsDefinitions\\stepsDefinitionLogin.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1397000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "fills username",
+            "match": {
+              "location": "Git\\QAInterview\\Features\\stepsDefinitions\\stepsDefinitionLogin.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2526000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "fills password",
+            "match": {
+              "location": "Git\\QAInterview\\Features\\stepsDefinitions\\stepsDefinitionLogin.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1154000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "clicks Log in button",
+            "match": {
+              "location": "Git\\QAInterview\\Features\\stepsDefinitions\\stepsDefinitionLogin.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6468000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "user should be redirected to account page \"/profile\"",
+            "match": {
+              "location": "Git\\QAInterview\\Features\\stepsDefinitions\\stepsDefinitionLogin.js:40"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 37000000,
+              "error_message": "AssertionError: The user was not redirected to the right section!: expected 'http://qatest.staging.kaboo.com/en/lobby' to contain '/profile'\n    at C:\\Users\\Toshiba\\Desktop\\Proyectos Git\\QAInterview\\Features\\stepsDefinitions\\stepsDefinitionLogin.js:43:33\n    at ManagedPromise.invokeCallback_ (C:\\Users\\Toshiba\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\Toshiba\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\Toshiba\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (C:\\Users\\Toshiba\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at C:\\Users\\Toshiba\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\..\\..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
